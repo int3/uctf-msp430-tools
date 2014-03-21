@@ -490,8 +490,7 @@ class Machine(object):
         bit_count = self.operand_bytes * 8
         mask = (1 << bit_count) - 1
         v = ((v >> 1) | (self.carry << bit_count - 1)) & mask
-        # what happens to high order bits?
-        if v & mask & 0x8000:
+        if v & 0x8000:
             self.negative = 1
         if v != 0:
             self.zero = 0
