@@ -9,7 +9,7 @@ Usage
 -----
 
 * `create_rom.py [text_dump] [romfile]`
-* `emulator.py [romfile]`
+* `emulator.py [romfile] [-t tracefile]`
 * `assembler.py [file]` or `assembler.py -i`
 
 [1]: http://www.microcorruption.com/
